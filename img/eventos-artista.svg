@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" role="img" aria-labelledby="title desc">
+  <title id="title">Calendario de conciertos</title>
+  <desc id="desc">Ilustracion de agenda con fechas de presentaciones musicales.</desc>
+  <rect width="1000" height="700" fill="#0c0c0c"/>
+  <rect x="120" y="80" width="760" height="540" rx="24" fill="#141414" stroke="#2b2b2b"/>
+  <rect x="120" y="80" width="760" height="120" rx="24" fill="#f5c242"/>
+  <circle cx="230" cy="140" r="14" fill="#000000"/>
+  <circle cx="770" cy="140" r="14" fill="#000000"/>
+  <rect x="190" y="250" width="170" height="120" rx="12" fill="#ffffff"/>
+  <rect x="415" y="250" width="170" height="120" rx="12" fill="#ffffff"/>
+  <rect x="640" y="250" width="170" height="120" rx="12" fill="#ffffff"/>
+  <rect x="190" y="410" width="170" height="120" rx="12" fill="#f5c242"/>
+  <rect x="415" y="410" width="170" height="120" rx="12" fill="#f5c242"/>
+  <rect x="640" y="410" width="170" height="120" rx="12" fill="#f5c242"/>
+</svg>

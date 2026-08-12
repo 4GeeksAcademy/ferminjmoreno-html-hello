@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Artista | Landing Page Oficial</title>
+		<meta
+			name="description"
+			content="Landing page oficial del artista con biografia, trayectoria y proximas presentaciones."
+		/>
+		<meta name="robots" content="index, follow" />
+		<meta name="theme-color" content="#000000" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Artista | Landing Page Oficial" />
+		<meta
+			property="og:description"
+			content="Conoce al artista, su trayectoria y las proximas presentaciones en vivo."
+		/>
+		<meta property="og:locale" content="es_ES" />
+		<link rel="stylesheet" href="estilos.css" />
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "MusicGroup",
+				"name": "Artista",
+				"description": "Proyecto musical con presentaciones en vivo y repertorio original.",
+				"genre": "Musica en vivo",
+				"url": "https://example.com",
+				"sameAs": [
+					"https://www.instagram.com/",
+					"https://www.youtube.com/"
+				],
+				"event": [
+					{
+						"@type": "MusicEvent",
+						"name": "Noche de Lanzamiento",
+						"startDate": "2026-09-15T20:00:00-05:00",
+						"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+						"eventStatus": "https://schema.org/EventScheduled",
+						"location": {
+							"@type": "Place",
+							"name": "Sala Central",
+							"address": {
+								"@type": "PostalAddress",
+								"addressLocality": "Bogota",
+								"addressCountry": "CO"
+							}
+						}
+					},
+					{
+						"@type": "MusicEvent",
+						"name": "Festival de Otono",
+						"startDate": "2026-10-03T18:30:00-05:00",
+						"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+						"eventStatus": "https://schema.org/EventScheduled",
+						"location": {
+							"@type": "Place",
+							"name": "Parque Norte",
+							"address": {
+								"@type": "PostalAddress",
+								"addressLocality": "Medellin",
+								"addressCountry": "CO"
+							}
+						}
+					}
+				]
+			}
+		</script>
+	</head>
+	<body class="page">
+		<a class="page__skip-link" href="#contenido-principal">Saltar al contenido principal</a>
+
+		<header class="header" role="banner">
+			<div class="header__container">
+				<p class="header__brand" aria-label="Nombre del artista">ARTISTA</p>
+				<nav class="nav" aria-label="Navegacion principal">
+					<ul class="nav__list">
+						<li class="nav__item"><a class="nav__link" href="#about-me">About me</a></li>
+						<li class="nav__item"><a class="nav__link" href="#trayectoria">Trayectoria</a></li>
+						<li class="nav__item"><a class="nav__link" href="#proximas-presentaciones">Proximas Presentaciones</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main id="contenido-principal" class="main" tabindex="-1">
+			<section class="hero" aria-labelledby="hero-title">
+				<div class="hero__content hero__content--layout">
+					<div class="hero__copy">
+						<p class="hero__eyebrow">Musica en vivo</p>
+						<h1 id="hero-title" class="hero__title">Sonido, energia y presencia escenica</h1>
+						<p class="hero__text">
+							Una propuesta artistica que mezcla composicion original, interpretacion en vivo y una experiencia sonora pensada para conectar con el publico.
+						</p>
+						<a class="hero__cta" href="#proximas-presentaciones">Ver agenda</a>
+					</div>
+					<figure class="hero__figure">
+						<img
+							class="hero__image"
+							src="img/hero-artista.svg"
+							alt="Escenario iluminado durante una presentacion musical"
+							loading="eager"
+							decoding="async"
+						/>
+					</figure>
+				</div>
+			</section>
+
+			<section id="about-me" class="section section--about" aria-labelledby="about-title">
+				<div class="section__container section__container--media">
+					<figure class="section__figure">
+						<img
+							class="section__image"
+							src="img/about-artista.svg"
+							alt="Retrato abstracto del artista"
+							loading="lazy"
+							decoding="async"
+						/>
+					</figure>
+					<div class="section__copy">
+					<h2 id="about-title" class="section__title">About me</h2>
+					<p class="section__text">
+						Soy un artista enfocado en transformar emociones en canciones. Mi estilo cruza influencias contemporaneas con una identidad propia, creando shows cercanos, intensos y memorables.
+					</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="trayectoria" class="section section--trajectory" aria-labelledby="trayectoria-title">
+				<div class="section__container section__container--media">
+					<figure class="section__figure">
+						<img
+							class="section__image"
+							src="img/hero-artista.svg"
+							alt="Escena de concierto representando la trayectoria del artista"
+							loading="lazy"
+							decoding="async"
+						/>
+					</figure>
+					<div class="section__copy">
+					<h2 id="trayectoria-title" class="section__title">Trayectoria</h2>
+					<ol class="timeline" aria-label="Hitos de trayectoria artistica">
+						<li class="timeline__item">
+							<h3 class="timeline__title">2022 - Primer EP</h3>
+							<p class="timeline__text">Lanzamiento del primer material independiente con presentaciones locales.</p>
+						</li>
+						<li class="timeline__item">
+							<h3 class="timeline__title">2024 - Gira nacional</h3>
+							<p class="timeline__text">Shows en diferentes ciudades con una puesta en escena renovada.</p>
+						</li>
+						<li class="timeline__item">
+							<h3 class="timeline__title">2026 - Nueva etapa</h3>
+							<p class="timeline__text">Produccion de nuevos sencillos y colaboraciones en festivales.</p>
+						</li>
+					</ol>
+					</div>
+				</div>
+			</section>
+
+			<section
+				id="proximas-presentaciones"
+				class="section section--events"
+				aria-labelledby="eventos-title"
+			>
+				<div class="section__container section__container--media">
+					<figure class="section__figure">
+						<img
+							class="section__image"
+							src="img/eventos-artista.svg"
+							alt="Agenda visual de proximas presentaciones"
+							loading="lazy"
+							decoding="async"
+						/>
+					</figure>
+					<div class="section__copy">
+					<h2 id="eventos-title" class="section__title">Proximas Presentaciones</h2>
+					<div class="events" role="list">
+						<article class="event-card" role="listitem" aria-label="Evento Noche de Lanzamiento">
+							<h3 class="event-card__title">Noche de Lanzamiento</h3>
+							<p class="event-card__meta"><strong>Fecha:</strong> 15 de septiembre de 2026</p>
+							<p class="event-card__meta"><strong>Lugar:</strong> Sala Central, Bogota</p>
+						</article>
+						<article class="event-card" role="listitem" aria-label="Evento Festival de Otono">
+							<h3 class="event-card__title">Festival de Otono</h3>
+							<p class="event-card__meta"><strong>Fecha:</strong> 3 de octubre de 2026</p>
+							<p class="event-card__meta"><strong>Lugar:</strong> Parque Norte, Medellin</p>
+						</article>
+						<article class="event-card" role="listitem" aria-label="Evento Sesion Intima">
+							<h3 class="event-card__title">Sesion Intima</h3>
+							<p class="event-card__meta"><strong>Fecha:</strong> 22 de noviembre de 2026</p>
+							<p class="event-card__meta"><strong>Lugar:</strong> Teatro Sur, Cali</p>
+						</article>
+					</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<nav class="footer__social" aria-label="Redes sociales del artista">
+				<ul class="footer__social-list">
+					<li class="footer__social-item">
+						<a class="footer__social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+					</li>
+					<li class="footer__social-item">
+						<a class="footer__social-link" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a>
+					</li>
+					<li class="footer__social-item">
+						<a class="footer__social-link" href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer">Spotify</a>
+					</li>
+					<li class="footer__social-item">
+						<a class="footer__social-link" href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok</a>
+					</li>
+				</ul>
+			</nav>
+			<p class="footer__text">&copy; 2026 Artista. Todos los derechos reservados.</p>
+		</footer>
+	</body>
+</html>

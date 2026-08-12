@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Artista | Landing Visual V2</title>
+		<meta
+			name="description"
+			content="Version visual alternativa de la landing del artista con fotos reales de conciertos y escenarios."
+		/>
+		<meta name="robots" content="index, follow" />
+		<meta name="theme-color" content="#050505" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Artista | Landing Visual V2" />
+		<meta
+			property="og:description"
+			content="Conoce al artista, su trayectoria y proximas presentaciones en una version visual con fotografias reales."
+		/>
+		<meta property="og:locale" content="es_ES" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body class="artist-page">
+		<a class="artist-page__skip-link" href="#contenido-principal">Saltar al contenido principal</a>
+
+		<header class="topbar" role="banner">
+			<div class="topbar__container">
+				<p class="topbar__brand">ARTISTA</p>
+				<nav class="menu" aria-label="Navegacion principal">
+					<ul class="menu__list">
+						<li class="menu__item"><a class="menu__link" href="#about-me">About me</a></li>
+						<li class="menu__item"><a class="menu__link" href="#trayectoria">Trayectoria</a></li>
+						<li class="menu__item"><a class="menu__link" href="#proximas-presentaciones">Proximas Presentaciones</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main id="contenido-principal" class="artist-main" tabindex="-1">
+			<section class="panel panel--hero" aria-labelledby="hero-title">
+				<div class="panel__media-wrap">
+					<img
+						class="panel__media"
+						src="img/v2/hero-concierto.jpg"
+						alt="Publico durante un concierto nocturno con luces de escenario"
+						loading="eager"
+						decoding="async"
+					/>
+				</div>
+				<div class="panel__overlay"></div>
+				<div class="panel__content">
+					<p class="panel__eyebrow">Musica en vivo</p>
+					<h1 id="hero-title" class="panel__title">Sonido, energia y presencia escenica</h1>
+					<p class="panel__text">
+						Una propuesta artistica que fusiona composicion original y una puesta en escena que conecta con el publico en cada ciudad.
+					</p>
+					<a class="panel__cta" href="#proximas-presentaciones">Ver agenda</a>
+				</div>
+			</section>
+
+			<section id="about-me" class="panel panel--about" aria-labelledby="about-title">
+				<div class="panel__media-wrap">
+					<img
+						class="panel__media"
+						src="img/v2/about-cantante.jpg"
+						alt="Cantante interpretando en vivo frente a microfono"
+						loading="lazy"
+						decoding="async"
+					/>
+				</div>
+				<div class="panel__overlay"></div>
+				<div class="panel__content">
+					<h2 id="about-title" class="panel__title">About me</h2>
+					<p class="panel__text">
+						Soy un artista enfocado en transformar emociones en canciones. Mi estilo combina influencias contemporaneas y una narrativa personal construida desde el escenario.
+					</p>
+				</div>
+			</section>
+
+			<section id="trayectoria" class="panel panel--trajectory" aria-labelledby="trayectoria-title">
+				<div class="panel__media-wrap">
+					<img
+						class="panel__media"
+						src="img/v2/trayectoria-festival.jpg"
+						alt="Escenario de festival con luces y multitud"
+						loading="lazy"
+						decoding="async"
+					/>
+				</div>
+				<div class="panel__overlay"></div>
+				<div class="panel__content">
+					<h2 id="trayectoria-title" class="panel__title">Trayectoria</h2>
+					<ol class="milestones" aria-label="Hitos de trayectoria artistica">
+						<li class="milestones__item">
+							<h3 class="milestones__title">2022 - Primer EP</h3>
+							<p class="milestones__text">Inicio del proyecto y primeras presentaciones en salas independientes.</p>
+						</li>
+						<li class="milestones__item">
+							<h3 class="milestones__title">2024 - Gira nacional</h3>
+							<p class="milestones__text">Recorrido por diferentes ciudades con show audiovisual renovado.</p>
+						</li>
+						<li class="milestones__item">
+							<h3 class="milestones__title">2026 - Nueva etapa</h3>
+							<p class="milestones__text">Lanzamientos, colaboraciones y participacion en festivales destacados.</p>
+						</li>
+					</ol>
+				</div>
+			</section>
+
+			<section
+				id="proximas-presentaciones"
+				class="panel panel--events"
+				aria-labelledby="eventos-title"
+			>
+				<div class="panel__media-wrap">
+					<img
+						class="panel__media"
+						src="img/v2/eventos-escenario.jpg"
+						alt="Escenario listo para una presentacion con instrumentos"
+						loading="lazy"
+						decoding="async"
+					/>
+				</div>
+				<div class="panel__overlay"></div>
+				<div class="panel__content">
+					<h2 id="eventos-title" class="panel__title">Proximas Presentaciones</h2>
+					<div class="shows" role="list">
+						<article class="shows__card" role="listitem" aria-label="Evento Noche de Lanzamiento">
+							<h3 class="shows__title">Noche de Lanzamiento</h3>
+							<p class="shows__meta"><strong>Fecha:</strong> 15 de septiembre de 2026</p>
+							<p class="shows__meta"><strong>Lugar:</strong> Sala Central, Bogota</p>
+						</article>
+						<article class="shows__card" role="listitem" aria-label="Evento Festival de Otono">
+							<h3 class="shows__title">Festival de Otono</h3>
+							<p class="shows__meta"><strong>Fecha:</strong> 3 de octubre de 2026</p>
+							<p class="shows__meta"><strong>Lugar:</strong> Parque Norte, Medellin</p>
+						</article>
+						<article class="shows__card" role="listitem" aria-label="Evento Sesion Intima">
+							<h3 class="shows__title">Sesion Intima</h3>
+							<p class="shows__meta"><strong>Fecha:</strong> 22 de noviembre de 2026</p>
+							<p class="shows__meta"><strong>Lugar:</strong> Teatro Sur, Cali</p>
+						</article>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="credits">
+			<p class="credits__text">Fotos de referencia: Unsplash.</p>
+			<nav class="credits__social" aria-label="Redes sociales del artista">
+				<a class="credits__link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+				<a class="credits__link" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a>
+				<a class="credits__link" href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer">Spotify</a>
+				<a class="credits__link" href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok</a>
+			</nav>
+		</footer>
+	</body>
+</html>
